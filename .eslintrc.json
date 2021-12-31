@@ -1,3 +1,39 @@
 {
-  "extends": "next/core-web-vitals"
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 2021,
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": [
+    "react",
+    "@typescript-eslint",
+    "jest"
+  ],
+  "extends": [
+    "next/core-web-vitals",
+    "next",
+    "eslint-config-next",
+    "eslint:recommended",
+    "eslint-config-prettier",
+    "prettier"
+  ],
+  "ignorePatterns": [
+    "jest.config.ts"
+  ],
+  "rules": {
+    "react/no-children-prop": "off",
+    "react-hooks/exhaustive-deps": "off",
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": [
+      "error"
+    ]
+  }
 }
