@@ -17,7 +17,9 @@ export default async (): Promise<Config.InitialOptions> => {
       "^@/pages/(.*)$": "<rootDir>/pages/$1",
       "^@/types/(.*)$": "<rootDir>/types/$1",
       "^@/stores/(.*)$": "<rootDir>/stores/$1",
+      "^@/hooks/(.*)$": "<rootDir>/hooks/$1",
       "^@/styles/(.*)$": "<rootDir>/styles/$1",
+      "^@/(.*)$": "<rootDir>/$1",
     },
     testPathIgnorePatterns: ["<rootDir>/node_modules/", "<rootDir>/.next/"],
     transform: {
